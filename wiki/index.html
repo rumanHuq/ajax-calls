@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Wiki viewer</title>
+    <style>
+        #wiki {
+            position: relative;
+            width: 50%;
+            margin: auto;
+            min-height: 90vh;
+        }
+        #term {
+            letter-spacing: 2.5px;
+            display:block;
+            width: 23%;
+            margin: 10% 3% 0 auto;
+            height: 25px;
+            border:none;
+            border-bottom: 1px solid #e3e3e3;
+            font-size:23px;
+            text-align: right;
+            color: grey
+        }
+        #term:focus {
+            outline: none
+        }
+        button {
+            letter-spacing: 2.5px;
+            width: inherit;
+            margin: 0.3% 2% 0 auto;
+            display:block;
+            border:none;
+            background: none;
+            font-size:23px;
+            text-align: right;
+            color: grey;
+            cursor: pointer;
+        }
+        #submit:focus {
+            outline: none
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+        }
+        li {
+            background: #e7e7e7;
+            padding: 25px;
+            margin: 20px
+
+        }
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+        h1 {
+            position: fixed;
+            z-index: 4.5;
+            color: grey;
+            top: 0;
+            width: 100%;
+            display:inline;
+            width:4.3%;
+            border-bottom: 2px solid #e7e7e7 
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="wiki">
+        
+        <input type="text" placeholder="Search wiki...">
+        <button id="submit">Submit</button>
+        <h1>Wiki</h1>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" 
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
