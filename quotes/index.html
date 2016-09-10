@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        div {
-            font-size: 25px;
-            margin: 10px;
-            display:inline-block;
-            padding: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <a class="twitter-share-button"
-  href="">
-Tweet</a>
-<div id="div"></div>
-<button id="btn">GetQuote</button>
+    <div class="wrapper">
+        <div id="result">
+            <h2>
+                Get Some Quote, will ya?
+            </h2>
+        </div>
+        
+            <a class="twitter-share-button" href="">
+                <div class="anchor">
+                    Tweet
+                </div>
+            </a>
+        
+        <button id="btn">GetQuote</button>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" 
     integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
     crossorigin="anonymous"></script>
